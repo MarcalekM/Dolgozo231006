@@ -24,6 +24,10 @@ namespace Dolgozo
                 kor += d.Age;
             }
             Console.WriteLine($"\tA dolgozók átlag életkora: {kor / dolgozok.Count}");
+
+            Console.WriteLine("9. feladat:");
+            var f9 = dolgozok.Count(d => d.City == "Budapest");
+            Console.WriteLine($"\tA Budapesten élő dolgozók száma: {f9}");
         }
     }
 }
