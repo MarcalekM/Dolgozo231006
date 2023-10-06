@@ -33,6 +33,20 @@ namespace Dolgozo
             var f10 = dolgozok.OrderBy(d => d.Age)
                                .First();
             Console.WriteLine($"\tA legöregebb dolgozó {f10.Name}");
+
+            Console.WriteLine("11. feladat:");
+
+            Console.WriteLine("12. feladat:");
+            var f12 = dolgozok.Where(d => d.Age < 30);
+            foreach (var f in f12)
+            {
+                Console.WriteLine(f.Name);
+            }
+
+
+
+
+            Console.ReadLine();
         }
     }
 }
