@@ -28,6 +28,11 @@ namespace Dolgozo
             Console.WriteLine("9. feladat:");
             var f9 = dolgozok.Count(d => d.City == "Budapest");
             Console.WriteLine($"\tA Budapesten élő dolgozók száma: {f9}");
+
+            Console.WriteLine("10. feladat:");
+            var f10 = dolgozok.OrderBy(d => d.Age)
+                               .First();
+            Console.WriteLine($"\tA legöregebb dolgozó {f10.Name}");
         }
     }
 }
